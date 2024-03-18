@@ -23,8 +23,8 @@ static const char *colors[SchemeLast][2] = {
 static const unsigned int alphas[SchemeLast][2] = {
 	/*                        fg      bg       */
 	[SchemeNorm] =          { OPAQUE, alpha },
-	[SchemeSel] =           { OPAQUE, alpha },
-	[SchemeSelHighlight] =  { OPAQUE, alpha },
+	[SchemeSel] =           { OPAQUE, OPAQUE},
+	[SchemeSelHighlight] =  { OPAQUE, OPAQUE},
 	[SchemeNormHighlight] = { OPAQUE, alpha },
 	[SchemeOut] =           { OPAQUE, alpha },
 };
