@@ -7,24 +7,24 @@ static int fuzzy = 1;                      /* -F  option; if 0, dmenu doesn't us
 
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"Fira Code:size=12"
+	"FiraCode Nerd Font:size=12"
 };
 
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*                         fg         bg       */
-	[SchemeNorm] =          { "#d4be98", "#1d2021" },
-	[SchemeSel] =           { "#1d2021", "#d4be98" },
-	[SchemeSelHighlight] =  { "#928374", "#d4be98" },
-	[SchemeNormHighlight] = { "#928374", "#1d2021" },
-	[SchemeOut] =           { "#1d2021", "#9dc2ba" },
+	[SchemeNorm] =          { "#d8dee9", "#2e3440" },
+	[SchemeSel] =           { "#eceff4", "#4c566a" },
+	[SchemeSelHighlight] =  { "#88c0d0", "#4c566a" },
+	[SchemeNormHighlight] = { "#81a1c1", "#2e3440" },
+	[SchemeOut] =           { "#d8dee9", "#2e3440" },
 };
 
 static const unsigned int alphas[SchemeLast][2] = {
 	/*                        fg      bg       */
 	[SchemeNorm] =          { OPAQUE, alpha },
-	[SchemeSel] =           { OPAQUE, OPAQUE},
-	[SchemeSelHighlight] =  { OPAQUE, OPAQUE},
+	[SchemeSel] =           { OPAQUE, alpha },
+	[SchemeSelHighlight] =  { OPAQUE, alpha },
 	[SchemeNormHighlight] = { OPAQUE, alpha },
 	[SchemeOut] =           { OPAQUE, alpha },
 };
